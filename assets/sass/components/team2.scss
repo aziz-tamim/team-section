@@ -1,0 +1,91 @@
+///// Blog section /////
+.blog__post__item {
+    position: relative;
+    transition: .3s;
+    &__img {
+        position: relative;
+    }
+    &:before {
+        // background-color: #070215;
+    }
+    &:hover:before  {
+        opacity: 0.9;
+        visibility: visible;
+        width: 100%;
+    }
+    &__content{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 50px;
+        z-index: 5;
+        text-align: center;
+        visibility: hidden;
+    }
+}
+
+.blog__post__item:hover .blog__post__item__content {
+    visibility: visible;
+}
+
+
+.team-content {
+    text-align: center;
+    margin-top: -5px;
+    padding: 20px;
+}
+.team__name {
+    h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+}
+.team__job {
+    span {
+        font-size: 1.3rem;
+    }
+}
+.blog__icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+.blog__icon a {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    color: #481bae;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    text-decoration: none;
+}
+.blog__icon a:hover {
+    background-color: #481bae;
+    color: #fff;
+}
+
+.blog__post__item__img:before {
+    background-image: linear-gradient(to left, transparent 0%, #111111 100%);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    content: '';
+    z-index: 2;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.blog__post__item__img:hover:before {
+    opacity: 0.9;
+    visibility: visible;
+    width: 100%;
+}
