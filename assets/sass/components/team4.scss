@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .team4 {
     padding: 80px 0;
   [class^="col-"],
@@ -80,3 +81,87 @@
   box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease,
 }
+=======
+.team4 {
+    padding: 80px 0;
+  [class^="col-"],
+  [class*=" col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.team4__item {
+  border: 1px solid #ddd;
+  transition: 0.3s;
+  background-color: #fff;
+  &__main {
+    padding: 30px 25px;
+  }
+  &__img {
+    width: 98px;
+    height: 98px;
+    border-radius: 100%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  &__name {
+    h1 {
+      font-size: 18px;
+      color: #313435;
+      font-weight: 500;
+      line-height: 1.4;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  &__job {
+    text-align: center;
+    span {
+      font-weight: 300;
+      color: #6f808a;
+      font-size: 14px;
+      line-height: 26px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  &__icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.4s;
+    margin-top: 15px;
+    opacity: 0;
+    a {
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      color: #481bae;
+      background-color: #e2e2e2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      text-decoration: none;
+      &:hover {
+        background-color: #481bae;
+        color: #fff;
+      }
+    }
+  }
+  &:hover .team4__item__icon {
+    opacity: 1;
+  }
+}
+.team4__item:hover {
+  z-index: 999;
+  position: relative;
+  transform: scale(1.1);
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease,
+}
+>>>>>>> 3cdd329cdbc05b2dff3801311ef62a431f4af7c1
