@@ -5,32 +5,21 @@
     &__img {
         position: relative;
     }
-    &:before {
-        // background-color: #070215;
-    }
-    &:hover:before  {
-        opacity: 0.9;
-        visibility: visible;
-        width: 100%;
-    }
     &__content{
         position: absolute;
         left: 0;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-        padding: 50px;
-        z-index: 5;
+        transition: 0.3s;
         text-align: center;
-        visibility: hidden;
+        opacity: 0;
     }
 }
-
 .blog__post__item:hover .blog__post__item__content {
-    visibility: visible;
+    opacity: 1;
+    z-index: 5;
 }
-
-
 .team-content {
     text-align: center;
     margin-top: -5px;
@@ -51,7 +40,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     transition: 0.5s;
 }
 .blog__icon a {
@@ -70,7 +59,6 @@
     background-color: #481bae;
     color: #fff;
 }
-
 .blog__post__item__img:before {
     background-image: linear-gradient(to left, transparent 0%, #111111 100%);
     position: absolute;
@@ -83,9 +71,19 @@
     opacity: 0;
     visibility: hidden;
 }
-
-.blog__post__item__img:hover:before {
+.blog__post__item:hover .blog__post__item__img:before {
     opacity: 0.9;
     visibility: visible;
     width: 100%;
 }
+.blog .swiper-button-next {
+    margin-right: 40px;
+    color: #222;
+    cursor: pointer;        
+}
+.blog .swiper-button-prev {
+        margin-left: 40px;
+        color: #222;
+        cursor: pointer;
+}
+///// blog section end /////

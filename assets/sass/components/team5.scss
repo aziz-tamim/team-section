@@ -1,0 +1,65 @@
+///// team5 section start /////
+.team5 {
+    &__item {
+        transition: 0.5s;
+        position: relative;
+        img {
+            width: 100%; 
+            border-bottom: 5px solid #f2b410;
+        }
+        &__content {
+            position: absolute;
+            background-color: #f2b410;
+            top: auto;
+            width: 80%;
+            max-width: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: 10% 5%;
+            text-align: center;
+            transition: 0.3s;
+            transform: translateY(0);
+            opacity: 0;
+            z-index: 1;
+        }
+        &:hover {
+            .team5__item__content {
+                opacity: 1;
+                transform: translateY(-50%);
+                // bottom: 0;
+            }
+        }
+        &__name {
+            h1 {
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 0;
+                text-align: center;
+                color: #fff;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 8px;
+            }
+        }
+        &__job {
+            span {
+                font-size: 20px;
+                font-weight: 300;
+                text-transform: capitalize;
+                margin-bottom: 15px !important;
+                color: #fff;
+                margin: 0;
+                display: block;
+                text-align: center;
+            }
+        }
+        &__icon {
+            a {
+                margin-right: 10px;
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+}
+///// team5 section end /////
