@@ -11,6 +11,16 @@ $(document).ready(function () {
           modifier: 1,
           slideShadows: true,
         },
+        breakpoints: {  
+          '767': {
+              slidesPerView: 2,
+              spaceBetween: 20,
+          },
+          '480': {
+            slidesPerView: 1,
+            spaceBetween: 20,},
+
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -25,6 +35,18 @@ $(document).ready(function () {
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {  
+          '767': {
+              slidesPerView: 3,
+              spaceBetween: 20,
+          },
+          '480': {
+            slidesPerView: 2,
+            spaceBetween: 20,},
+          '@0': {
+            slidesPerView: 1,
+            spaceBetween: 10, },
         },
       });
       

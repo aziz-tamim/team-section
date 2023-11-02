@@ -370,6 +370,19 @@
   box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease; }
 
+@media only screen and (max-width: 1199px) {
+  .d-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 767px) {
+  .d-flex {
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 500px) {
+  .d-flex {
+    grid-template-columns: 1fr; } }
+
 .team5__item {
   transition: 0.5s;
   position: relative; }
@@ -415,6 +428,19 @@
     margin-right: 10px;
     color: #fff;
     font-size: 20px; }
+
+@media only screen and (max-width: 1199px) {
+  .d-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 767px) {
+  .d-flex {
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 500px) {
+  .d-flex {
+    grid-template-columns: 1fr; } }
 
 .blog10__item {
   position: relative; }
@@ -534,7 +560,10 @@ body {
   padding: 50px 0;
   text-align: center;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; }
   .pagination a {
     color: #fff !important;
     background: #481bae;
@@ -542,5 +571,4 @@ body {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    margin-right: 10px;
     text-decoration: none; }
