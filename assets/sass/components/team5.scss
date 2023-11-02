@@ -62,20 +62,20 @@
     }
 }
 
-@media only screen and (max-width: 1199px) {
-    .d-flex {
+@media only screen and (max-width: 1200px) {
+    .team5 .display {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
   }
   
   @media only screen and (max-width: 767px) {
-    .d-flex {
+   .team5 .display {
         grid-template-columns: 1fr 1fr;
     }
   }
-  @media only screen and (max-width: 500px) {
-    .d-flex {
+    @media only screen and (max-width: 556px) {
+    .team5 .display {
         grid-template-columns: 1fr;
     }
   }
