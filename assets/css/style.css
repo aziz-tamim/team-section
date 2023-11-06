@@ -40,11 +40,11 @@
   margin: 20px 0 !important;
   font-size: 18px; }
 
-.details ul {
+ul.details {
   list-style: none;
   display: flex;
   gap: 10px; }
-  .details ul li a {
+  ul.details li a {
     background-color: #eee;
     border-radius: 50%;
     width: 50px;
@@ -56,9 +56,13 @@
     justify-content: center;
     color: #481bae;
     transition: all .3s; }
-    .details ul li a:hover {
+    ul.details li a:hover {
       background-color: #481bae;
       color: #fff; }
+
+@media (max-width: 576px) {
+  .grid__item {
+    flex-wrap: wrap; } }
 
 .blog__post__item {
   position: relative;
