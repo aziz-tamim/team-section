@@ -33,7 +33,6 @@ $(document).ready(function () {
           },
       });
 
-
       var swiper = new Swiper(".amySwiper", {
         slidesPerView: 4,
         spaceBetween: 30,
